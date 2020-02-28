@@ -1,6 +1,10 @@
 :root {
    --my-blue: #96dff3;
    --blue-hover: #1389a9;
+   --header-color: #169cc0; 
+   --off-white: #f9fafc;
+   --subheading-color: #4a4a49;
+   --memory-fill: #dddddd;
 }
 
 .highlight {
@@ -21,7 +25,87 @@
     color: #333;
 }
 
+/*MAIN JAR FEED*/
+#jar-feed-div {
+    padding-left: 300px;
+    height: 100%;
+    background-color: var(--off-white);
+}
 
+#jar-large-title {
+    padding-left: 54px;
+    padding-top: 30px;
+    font-size: 62px;
+    margin-bottom: 0px;
+    
+    font-family: 'Oleo Script', 'Open Sans', sans-serif;
+    color: var(--header-color);
+}
+
+/*ul contains these icons: add, members, about*/
+.ul-jar-info {
+    list-style: none;
+    display: inline-block;
+    padding-left: 54px;
+    margin-bottom: 0;
+}
+
+.jar-info-item {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+            
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--subheading-color);
+}
+
+.jar-info-item:hover {
+    color: #FFF;
+    cursor: pointer;
+}
+
+.hr-jar-feed {
+    width: 80%;
+    border: 1px solid var(--subheading-color);
+    margin-left: 54px;
+}
+
+/*Memory object*/
+.memory-div {
+    width: 80%;
+    margin: auto;
+    margin-left: 54px;
+    border-radius: 10px;
+    display: block;
+    
+    background-color: var(--memory-fill);
+}
+
+.memory-header, .memory-desc, .memory-owner {
+    padding-left: 10px;
+    padding-top: 5px; 
+}
+
+.memory-header {
+    margin-bottom: -10px;
+    font-size: 28px;
+    font-style: italic;
+    color: #000;
+}
+
+.memory-desc {
+    font-size: 22px;
+    color: var(--subheading-color);
+}
+
+.memory-owner {
+    padding-bottom: 10px;
+    font-size: 16px;
+    
+    color: #757575;    
+}
+/***End memory object*********/
 
 
 
